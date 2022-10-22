@@ -1,2 +1,15 @@
-# bash-scripting-tutorial
-A tutorial to deliver to newcomers on bash scripting
+# A Bash Scripting Tutorial for Newcomers
+
+In this Bash scripting tutorial you will learn:
+
+* Passing arguments to a Bash script
+* global and local variables in Bash
+* Reading user input
+* read arrays in Bash
+* compare integers and strings
+* for, while, until loops, if and case statements
+* functions in Bash
+* quotes and special characters in Bash
+* Arithmetic calculations with Bash
+* Bash redirection and piping
+
