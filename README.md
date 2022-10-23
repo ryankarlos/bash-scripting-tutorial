@@ -13,3 +13,12 @@ In this Bash scripting tutorial you will learn:
 * Arithmetic calculations with Bash
 * Bash redirection and piping
 
+
+
+
+Install zsh or bash theme byt following these instructions:
+
+https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+https://github.com/ohmybash/oh-my-bash
+
+

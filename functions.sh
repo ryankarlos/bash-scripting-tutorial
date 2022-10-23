@@ -5,7 +5,7 @@ function function_B {
         echo Function B.
 }
 function function_A {
-        echo $1
+        echo function_B
 }
 function function_D {
         echo Function D.
