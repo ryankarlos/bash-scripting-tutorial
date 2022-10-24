@@ -1,42 +1,45 @@
 #!/bin/bash
 
 # bash for loop
-for f in $( ls . ); do
-	echo $f
+for a in 1 2 3 4 5 6 7 8 9 10
+do
+    # if a = 5 then continue the loop and
+    # don't move to line 8
+    if [ $a == 5 ]
+    then
+        continue
+    fi
+    echo "Iteration no $a"
 done
 
 
-# A for loop can also be run directly from the command line, no need for a script:
-# $ for f in $( ls /var/ ); do echo $f; done
-
 # bash while loop
+a=0
+# -lt is less than operator
 
-COUNT=6
-while [ $COUNT -gt 0 ]; do
-	echo Value of count is: $COUNT
-	let COUNT=COUNT-1
+#Iterate the loop until a less than 10
+while [ $a -lt 10 ]
+do
+    # Print the values
+    echo $a
+
+    # increment the value
+    a=`expr $a + 1`
 done
 
 
 # until loop
 
-COUNT=0
-until [ $COUNT -gt 5 ]; do
-        echo Value of count is: $COUNT
-        let COUNT=COUNT+1
+a=0
+# -gt is greater than operator
+
+#Iterate the loop until a is greater than 10
+until [ $a -gt 10 ]
+do
+    # Print the values
+    echo $a
+
+    # increment the value
+    a=`expr $a + 1`
 done
 
-
-# This bash script will locate and replace spaces # in the filenames
-DIR="."
-# Controlling a loop with bash read command by redirecting STDOUT as
-# a STDIN to while loop
-# find will not truncate filenames containing spaces
-find $DIR -type f | while read file; do
-# using POSIX class [:space:] to find space in the filename
-if [[ "$file" = *[[:space:]]* ]]; then
-# substitute space with "_" character and consequently rename the file
-mv "$file" `echo $file | tr ' ' '_'`
-fi;
-# end of while loop
-done
