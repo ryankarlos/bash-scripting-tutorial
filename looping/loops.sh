@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # bash for loop
-for f in $( ls /var/ ); do
+for f in $( ls . ); do
 	echo $f
 done
 
