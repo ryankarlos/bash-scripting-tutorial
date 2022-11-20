@@ -1,13 +1,24 @@
 #!/bin/bash
 
 # bash for loop
-for a in {1..10..2}
+for a in {1..8}
 do
-    if [ $a -lt 10 ];
-    then
-        continue
-    fi
-    echo "nunber $a"
+  let "b-$a % 2"
+  if [ $b -eq 0 ]; then
+    echo "$a is divisible by 2"
+  else
+    echo "number is $a"
+  fi
+done
+
+a=0
+#Iterate the loop until a less than 10
+while [ $a -lt 4 ]
+do
+  # Print the values
+  echo $a
+  # increment the value
+  let "a++"
 done
 
 
